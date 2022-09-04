@@ -15,6 +15,7 @@ call plug#end()
 
 " Activate syntax
 syntax on
+" Enable VScode colorscheme
 colorscheme vim-code-dark
 " Number line
 set nu
