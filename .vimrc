@@ -33,6 +33,17 @@ inoremap kj <Esc>
 nnoremap ; :
 " Remap Ctrl-w to uj for change window
 nnoremap <C-w> <C-w>w
+" Remap NERDTree
+nnoremap <C-n> :NERDTree<CR>
+
+
+"""""""""""""""""""""""""""""""""
+" NERDTree
+"""""""""""""""""""""""""""""""""
+
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
 
 """""""""""""""""""""""""""""""""
@@ -56,4 +67,4 @@ set backspace=indent,eol,start
 
 " Set variables for 42 Header
 let g:user42 = 'edelage'
-let g:mail43 = 'edelage@student.42lyon.fr'
+let g:mail42 = 'edelage@student.42lyon.fr'
