@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 	" Project tree
 	Plug 'preservim/nerdtree'
-
 call plug#end()
 
 
@@ -18,7 +17,8 @@ syntax on
 " Enable VScode colorscheme
 colorscheme vim-code-dark
 " Number line
-set nu
+set number
+set relativenumber
 " Highlight column 81
 set colorcolumn=81
 
