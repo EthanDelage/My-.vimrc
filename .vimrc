@@ -1,4 +1,4 @@
-"""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""
 " Plugins
 """""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
@@ -6,7 +6,6 @@ call plug#begin('~/.vim/plugged')
 	" Project tree
 	Plug 'preservim/nerdtree'
 call plug#end()
-
 
 """""""""""""""""""""""""""""""""
 " User interface
@@ -31,8 +30,12 @@ set colorcolumn=81
 inoremap kj <Esc>
 " Remap : to ; in normal mode and no recursive
 nnoremap ; :
-" Remap Ctrl-w to uj for change window
+"Navigate in split window
 nnoremap <C-w> <C-w>w
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 " Remap NERDTree
 nnoremap <C-n> :NERDTree<CR>
 
